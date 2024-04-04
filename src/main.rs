@@ -169,6 +169,7 @@ impl<'ecx> Parser<'ecx> {
 
                 // Consume ")"
                 let _ = self.expect(Token::BrClose)?;
+                self.next()?;
 
                 parsed
             }
